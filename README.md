@@ -19,8 +19,9 @@
 
 - (2023) 🎉 [SCB 10X Hackathon - Improving low-resource language Large Language Model](https://github.com/GameTL/Traveling-Salesman-SCB-10X-Hack) \[[Based on Research Paper - Linguistically-Diverse Prompts](371728889_Democratizing_LLMs_for_Low-Resource_Languages_by_Leveraging_their_English_Dominant_Abilities_with_Linguistically-Diverse_Prompts)\]
 
-- (2023) 🤖 Competiting Robocup2023@Home at Bordeaux, France
-  - [@EIC-NLP](https://github.com/EIC-NLP) Architecting the NLP system for Walkie 3(Robot)
+- (2023) 🤖 Competing Robocup2023@Home at Bordeaux, France
+  - Vice-President of EIC Robocup: team management and travel plans
+  - [@EIC-NLP](https://github.com/EIC-NLP) Architecting the NLP system for Walkie 3(Robot) as NLP Lead
   - [@EIC-CV2023](https://github.com/EIC-CV2023) Optimizing code for TensorRT Acceleration
   - [@robocup-eic/smach](https://github.com/robocup-eic/smach) Writing Smach State and module-based real-time state generation
 
@@ -32,6 +33,7 @@
 - (2022) [🐍 Snake Game Using Index Finger Computer Vision](https://github.com/EIC-NLP/ISE-Open-House-2022)(OpenCV)
 - (2022) [🛞 Encoder Reader Using Arduino connected to Python](https://github.com/GameTL/EIC-Game-Code)(Arduino C++, Python, Platform.io)
 - (2019) [👩‍🎓 Google Classroom Attendance Bot for Morning Classes](https://github.com/GameTL/Google-Classroom-Bot---DirtyRat)(Selenium, deathwish..)
+- (2019) [🤦 Simple Rock Paper Scissor Game](https://github.com/GameTL/Rock_Paper_Scissors-by-GameTL)(terrible code. first game.)
 
 
 # Web Projects
