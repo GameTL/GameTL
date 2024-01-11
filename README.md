@@ -13,10 +13,9 @@
 # Experience
 
 (2023) Competiting Robocup2023@Home at Bordeaux, France
-
-    - @EIC-NLP Architecting the NLP system for Walkie 3(Robot)
-    - @EIC-CV2023 Optimizing code for TensorRT Acceleration
-    - @robocup-eic/smach Writing Smach State and module-based real-time state     generation
+- @EIC-NLP Architecting the NLP system for Walkie 3(Robot)
+- @EIC-CV2023 Optimizing code for TensorRT Acceleration
+- @robocup-eic/smach Writing Smach State and module-based real-time state generation
 
 # Projects
 
