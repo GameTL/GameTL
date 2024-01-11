@@ -24,6 +24,7 @@
   - [@EIC-NLP](https://github.com/EIC-NLP) Architecting the NLP system for Walkie 3(Robot) as NLP Lead
   - [@EIC-CV2023](https://github.com/EIC-CV2023) Optimizing code for TensorRT Acceleration
   - [@robocup-eic/smach](https://github.com/robocup-eic/smach) Writing Smach State and module-based real-time state generation
+- (2022) 🤖 member of Electrical Team of EIC Robocup2022@Home at Bangkok, Thailand
 
 # Robotics, ML, etc. Projects
 
