@@ -1,7 +1,7 @@
 ### Hi there, my name is Game! 👋
 
 # Interests
-🤖 Robots (Manipulator, Mobile Robots)
+🤖 Robots (Manipulator, Mobile Robots, ROS Noetic, ROS2 Humble)
 
 🧠 NLP (LLM, STT, TTS, Intent Classification)
 
