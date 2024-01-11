@@ -29,8 +29,8 @@
 - (2023) [🤖 Collection of programmes for Turtlebot3 Burger](https://github.com/GameTL/Tinapat-Ros-Robot-Humble)(Python, Shell Bash)
 - (2023) [🤖 GTA Controller Binding for ROS2 Robots](https://github.com/GameTL/teleop_joy_gta)(Python)
 - (2023) [🤖 IMDb-based Movie Curator](https://github.com/GameTL/IMDb-Curator?tab=readme-ov-file)(Streamlit, Sklearn, Selenium) \[[Presentation](https://www.canva.com/design/DAF2YHrBYY4/IVScliOJLX5fh4Q6CIRyEg/view)\] \[[Live](https://movie-imdb-curator.streamlit.app/)\]
-- (2022) [🐍 Snake Game Using Index Finger Computer Cision](https://github.com/EIC-NLP/ISE-Open-House-2022)(OpenCV)
-- (2022) [🛞 Encoder Reader Using Arudino connected to Python](https://github.com/GameTL/EIC-Game-Code)(Arduino C++, Python, Platform.io)
+- (2022) [🐍 Snake Game Using Index Finger Computer Vision](https://github.com/EIC-NLP/ISE-Open-House-2022)(OpenCV)
+- (2022) [🛞 Encoder Reader Using Arduino connected to Python](https://github.com/GameTL/EIC-Game-Code)(Arduino C++, Python, Platform.io)
 - (2019) [👩‍🎓 Google Classroom Attendance Bot for Morning Classes](https://github.com/GameTL/Google-Classroom-Bot---DirtyRat)(Selenium, deathwish..)
 
 
