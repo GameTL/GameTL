@@ -40,7 +40,7 @@
 # Web Projects
 
 - (2023)   👨‍⚖️ App for Networking(Flutter)   \[[Live](https://flutter-app-one.vercel.app/)\]
-- (2022)   [🤖 EIC Robocup Website](https://github.com/robocup-eic/eic-website)  (Next.js, TailwindCSS)   \[[Live](https://eicrobocup.com)\]
+- (2022)   [🤖 EIC Robocup Website](https://github.com/robocup-eic/eic-website)   (Next.js, TailwindCSS)   \[[Live](https://eicrobocup.com)\]
 
 
 <!--
