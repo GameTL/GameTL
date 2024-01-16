@@ -28,19 +28,19 @@
 
 # Robotics, ML, etc. Projects
 
-- (2023) [🤖 Collection of programmes for Turtlebot3 Burger](https://github.com/GameTL/Tinapat-Ros-Robot-Humble)(Python, Shell Bash)
-- (2023) [🤖 GTA Controller Binding for ROS2 Robots](https://github.com/GameTL/teleop_joy_gta)(Python)
-- (2023) [🤖 IMDb-based Movie Curator](https://github.com/GameTL/IMDb-Curator?tab=readme-ov-file)(Streamlit, Sklearn, Selenium) \[[Presentation](https://www.canva.com/design/DAF2YHrBYY4/IVScliOJLX5fh4Q6CIRyEg/view)\] \[[Live](https://movie-imdb-curator.streamlit.app/)\]
-- (2022) [🐍 Snake Game Using Index Finger Computer Vision](https://github.com/EIC-NLP/ISE-Open-House-2022)(OpenCV)
-- (2022) [🛞 Encoder Reader Using Arduino connected to Python](https://github.com/GameTL/EIC-Game-Code)(Arduino C++, Python, Platform.io)
-- (2019) [👩‍🎓 Google Classroom Attendance Bot for Morning Classes](https://github.com/GameTL/Google-Classroom-Bot---DirtyRat)(Selenium, deathwish..)
-- (2019) [🤦 Simple Rock Paper Scissor Game](https://github.com/GameTL/Rock_Paper_Scissors-by-GameTL)(terrible code. first game.)
+- (2023)   [🤖 Collection of programmes for Turtlebot3 Burger](https://github.com/GameTL/Tinapat-Ros-Robot-Humble)   (Python, Shell Bash)
+- (2023)   [🤖 GTA Controller Binding for ROS2 Robots](https://github.com/GameTL/teleop_joy_gta)   (Python)
+- (2023)   [🤖 IMDb-based Movie Curator](https://github.com/GameTL/IMDb-Curator?tab=readme-ov-file)   (Streamlit, Sklearn, Selenium)   \[[Presentation](https://www.canva.com/design/DAF2YHrBYY4/IVScliOJLX5fh4Q6CIRyEg/view)\]   \[[Live](https://movie-imdb-curator.streamlit.app/)\]
+- (2022)   [🐍 Snake Game Using Index Finger Computer Vision](https://github.com/EIC-NLP/ISE-Open-House-2022)   (OpenCV)
+- (2022)   [🛞 Encoder Reader Using Arduino connected to Python](https://github.com/GameTL/EIC-Game-Code)   (Arduino C++, Python, Platform.io)
+- (2019)   [👩‍🎓 Google Classroom Attendance Bot for Morning Classes](https://github.com/GameTL/Google-Classroom-Bot---DirtyRat)   (Selenium, deathwish..)
+- (2019)   [🤦 Simple Rock Paper Scissor Game](https://github.com/GameTL/Rock_Paper_Scissors-by-GameTL)   (terrible code. first game.)
 
 
 # Web Projects
 
-- (2023) 👨‍⚖️ App for Networking(Flutter) \[[Live](https://flutter-app-one.vercel.app/)\]
-- (2022) [🤖 EIC Robocup Website](https://github.com/robocup-eic/eic-website)(Next.js, TailwindCSS) \[[Live](https://eicrobocup.com)\]
+- (2023)   👨‍⚖️ App for Networking(Flutter)   \[[Live](https://flutter-app-one.vercel.app/)\]
+- (2022)   [🤖 EIC Robocup Website](https://github.com/robocup-eic/eic-website)  (Next.js, TailwindCSS)   \[[Live](https://eicrobocup.com)\]
 
 
 <!--
