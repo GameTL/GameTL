@@ -13,7 +13,7 @@
 
 - (2024) 🧾 Pending...
 - (2024) 🧾 Pending...
-- (2023) 🧾 [Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management]([https://](https://www.researchgate.net/publication/373029972_Computer-vision-powered_Automatic_Waste_Sorting_Bin_a_Machine_Learning-based_Solution_on_Waste_Management))(YOLOv5, Pi 4) \[[Github](https://github.com/GameTL/the-Garbage-Projeckt)\]
+- (2023) 🧾 [Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management]([https://](https://www.researchgate.net/publication/373029972_Computer-vision-powered_Automatic_Waste_Sorting_Bin_a_Machine_Learning-based_Solution_on_Waste_Management))(YOLOv5, Pi 4) \[[Github](https://github.com/GameTL/the-Garbage-Projeckt)\] \[[Link](https://www.researchgate.net/publication/373029972_Computer-vision-powered_Automatic_Waste_Sorting_Bin_a_Machine_Learning-based_Solution_on_Waste_Management)\]
 
 # Experience
 
