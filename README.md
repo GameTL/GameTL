@@ -25,6 +25,7 @@
   - [@EIC-CV2023](https://github.com/EIC-CV2023) Optimizing code for TensorRT Acceleration
   - [@robocup-eic/smach](https://github.com/robocup-eic/smach) Writing Smach State and module-based real-time state generation
 - (2022) 🤖 member of Electrical Team of EIC Robocup2022@Home at Bangkok, Thailand
+- (2022) 👨‍⚖️ Full Stack Developer of Eatmi By AISEC
 
 # Robotics, ML, etc. Projects
 
