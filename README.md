@@ -11,21 +11,21 @@
 
 # Publications
 
-- (2024) 🧾 Pending...
-- (2024) 🧾 Pending...
-- (2023) 🧾 [Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management]((https://www.researchgate.net/publication/373029972_Computer-vision-powered_Automatic_Waste_Sorting_Bin_a_Machine_Learning-based_Solution_on_Waste_Management))(YOLOv5, Pi 4) \[[Github](https://github.com/GameTL/the-Garbage-Projeckt)\]
+- (2024)   🧾 Pending...
+- (2024)   🧾 Pending...
+- (2023)   🧾 [Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management](https://www.researchgate.net/publication/373029972_Computer-vision-powered_Automatic_Waste_Sorting_Bin_a_Machine_Learning-based_Solution_on_Waste_Management)   (YOLOv5, Pi 4)   \[[Github](https://github.com/GameTL/the-Garbage-Projeckt)\]
 
 # Experience
 
-- (2023) 🎉 [SCB 10X Hackathon - Improving low-resource language Large Language Model](https://github.com/GameTL/Traveling-Salesman-SCB-10X-Hack) \[[Based on Research Paper - Linguistically-Diverse Prompts](371728889_Democratizing_LLMs_for_Low-Resource_Languages_by_Leveraging_their_English_Dominant_Abilities_with_Linguistically-Diverse_Prompts)\]
+- (2023)   🎉 [SCB 10X Hackathon - Improving low-resource language Large Language Model](https://github.com/GameTL/Traveling-Salesman-SCB-10X-Hack) \[[Based on Research Paper - Linguistically-Diverse Prompts](371728889_Democratizing_LLMs_for_Low-Resource_Languages_by_Leveraging_their_English_Dominant_Abilities_with_Linguistically-Diverse_Prompts)\]
 
-- (2023) 🤖 Competing Robocup2023@Home at Bordeaux, France
+- (2023)   🤖 Competing Robocup2023@Home at Bordeaux, France
   - Vice-President of EIC Robocup: team management and travel plans
-  - [@EIC-NLP](https://github.com/EIC-NLP) Architecting the NLP system for Walkie 3(Robot) as NLP Lead
-  - [@EIC-CV2023](https://github.com/EIC-CV2023) Optimizing code for TensorRT Acceleration
-  - [@robocup-eic/smach](https://github.com/robocup-eic/smach) Writing Smach State and module-based real-time state generation
-- (2022) 🤖 member of Electrical Team of EIC Robocup2022@Home at Bangkok, Thailand
-- (2022) 👨‍⚖️ Full Stack Developer of Eatmi By AISEC
+  - [@EIC-NLP](https://github.com/EIC-NLP)   Architecting the NLP system for Walkie 3(Robot) as NLP Lead
+  - [@EIC-CV2023](https://github.com/EIC-CV2023)   Optimizing code for TensorRT Acceleration
+  - [@robocup-eic/smach](https://github.com/robocup-eic/smach)   Writing Smach State and module-based real-time state generation
+- (2022)   🤖 member of Electrical Team of EIC Robocup2022@Home at Bangkok, Thailand
+- (2022)   👨‍⚖️ Full Stack Developer of Eatmi By AISEC
 
 # Robotics, ML, etc. Projects
 
