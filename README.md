@@ -16,7 +16,7 @@
 - (2023)   🧾 [Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management](https://www.researchgate.net/publication/373029972_Computer-vision-powered_Automatic_Waste_Sorting_Bin_a_Machine_Learning-based_Solution_on_Waste_Management)   (YOLOv5, Pi 4)   \[[Github](https://github.com/GameTL/the-Garbage-Projeckt)\]
 
 # Experience
-
+- (2024-Present)   🎉 PCS Thailand - IoT Lead Engineer (PCS Athena IoT Platform)
 - (2023)   🎉 [SCB 10X Hackathon - Improving low-resource language Large Language Model](https://github.com/GameTL/Traveling-Salesman-SCB-10X-Hack) \[[Based on Research Paper - Linguistically-Diverse Prompts](371728889_Democratizing_LLMs_for_Low-Resource_Languages_by_Leveraging_their_English_Dominant_Abilities_with_Linguistically-Diverse_Prompts)\]
 
 - (2023)   🤖 Competing Robocup2023@Home at Bordeaux, France
