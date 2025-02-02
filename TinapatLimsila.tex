@@ -1,0 +1,469 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={John Doe's CV},
+    pdfauthor={John Doe},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.0 cm,
+        parsep=0.0 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.0 cm,
+        parsep=0.0 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+\newenvironment{twocolentrylinkheavy}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 8 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Tinapat Game Limsila
+
+        \vspace{5 pt}
+
+        \normalsize
+        % \mbox{Your Location}%
+        % \kern 5.0 pt%
+        % \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:limsila.limsila@gmail.com}{limsila.limsila@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+66 98 248 8442}{+66 98 248 8442}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://gametl.vercel.app}{gametl.vercel.app}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/gametl}{linkedin.com/in/gametl}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/gametl02}{github.com/gametl02}}%
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+
+
+    \section{Introduction}
+    I am an adaptive and detail-oriented engineer with proven expertise in project management, strategic planning, and technical execution in the field of robotics. Fueled with great passion for technologies. I really love real-world problem-solving.
+
+    
+    \section{Technologies}        
+        \begin{onecolentry}
+            \textbf{Languages:} Python, C++, Go, JavaScript, SQL
+        \end{onecolentry}
+        
+        \vspace{0.1 cm}
+        \begin{onecolentry}
+            \textbf{Frameworks \& Libraries:} OpenCV, Flask, FastAPI, ROS (Smach, Script, Packages), NextJS, React, Svelte, PyTorch
+        \end{onecolentry}
+        
+        \vspace{0.1 cm}
+        \begin{onecolentry}
+            \textbf{Databases:} PostgreSQL, MongoDB, MySQL, Prisma, Redis, InfluxDB Serverless
+        \end{onecolentry}
+        
+        \vspace{0.1 cm}
+        \begin{onecolentry}
+            \textbf{Cloud \& Tools:} Azure Cloud, AWS SageMaker \& EC2, Google Colab, Arduino
+        \end{onecolentry}
+        
+        \vspace{0.1 cm}
+        \begin{onecolentry}
+            \textbf{Engineering Software:} MATLAB (Simulink), CATIA, Fusion360, Solidworks, Webots
+        \end{onecolentry}
+
+    \section{Education}
+        \begin{twocolentry}{
+        January 2017 – June 2021
+        }
+        \textbf{Lanna International School, Thailand}, Cambridge International Examination A-Levels 
+        \end{twocolentry}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item GPA: Physics A, Math(Mechanics \& Statistic) A, Computer Science A, Chemistry B 
+                \item GPA: 3.63/4.0 %(\href{https://example.com}{a link to somewhere})
+                
+            \end{highlights}
+        \end{onecolentry}
+        \vspace{0.10 cm}
+        
+        \begin{twocolentry}{
+            August 2021 – May 2025
+            }
+            \textbf{International School of Engineering, Chulalongkorn University, Thailand}, Bachelor in Robotics and Artificial Intelligence Engineering 
+        \end{twocolentry}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item GPA: 3.33/4.0 (Second Honor)%(\href{https://example.com}{a link to somewhere})
+                \item \textbf{Senior Project:} Decentralized Collaborative Coordination in Robotic Swarms
+            \end{highlights}
+        \end{onecolentry}
+        \vspace{0.10 cm}
+
+        \begin{twocolentry}{January 2024 – May 2024}
+            \textbf{Nanyang Technological University, Singapore}, Exchange at Electrical and Electronics Engineering Faculty
+        \end{twocolentry}
+        
+    \vspace{0.20 cm}
+    \section{Experience}
+        \begin{twocolentry}{August 2024 – Present}
+        \textbf{IoT Lead Engineer}, PCS Thailand (OCS Group), Thailand\end{twocolentry}
+        \vspace{0.1 cm}
+        \begin{onecolentry}\begin{highlights}
+            \item Drove business development by creating technical solutions, managing client relationships, and developing sales proposals with comprehensive costing analysis through Salesforce pipeline
+            \item Architected and deployed end-to-end IoT solutions using Grafana, NextJS, FastAPI, and cloud services (Azure, AWS) for commercial clients including retails, hospitals and government facilities, managing over 1M monthly data points
+            \item Engineered industrial hardware integrations via RS485 protocols and implemented cloud connectivity using Milesight sensors for environmental monitoring systems
+            \item Modernized the sales quotation process by identifying inefficiencies in legacy Excel systems and implementing a custom web-based solution, resulting in streamlined workflows and reduced processing time for the sales team.
+        \end{highlights}\end{onecolentry}
+        
+        \vspace{0.2 cm}
+        \begin{twocolentry}{May 2024 – August 2024}
+        \textbf{Engineer Intern}, PCS Thailand (OCS Group), Thailand\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}\begin{highlights}
+            \item Assisting in piloting a in-house IoT development by interfacing with sensors. Accompanying Director of Engineering 
+        \end{highlights}\end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{August 2022 – July 2023}
+        \textbf{Team Co-Leader}, EIC Robocup Chula, Thailand\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}\begin{highlights}
+            \item Spearheaded the creation of "Walkie 3," a human-scale fully autonomous robot built from scratch for Robocup@Home, coordinating team qualifications, crafting the Team Description Paper, overseeing video production, and arranging travel for events in Bordeaux, France, and Bangkok.
+            \item Guided the software development of "Walkie 3" using Python/ROS2 Humble, seamlessly integrating ODrive PID, state management, NLP, and YOLOv8 to empower advanced computer vision capabilities.
+            \item Aided in mechanical parts design, metalwork, motor testing, and the assembly of components. Facilitated precise manipulation, algorithmic control solutions, and deployment on ROS2 Ubuntu systems.
+        \end{highlights}\end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{January 2022 – July 2023}
+        \textbf{Natural language Processing Lead}, EIC Robocup Chula, Thailand\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}\begin{highlights}
+            \item As lead, transitioned our mobile robot's NLP system to an offline setup, enhancing reliability and performance in competitions. Achieved flawless operation and improved transcription speed. Implemented backend communication via Flask and Socket.IO.
+            \item Link: https://github.com/EIC-NLP/Robocup-2024-EIC-NLP
+
+        \end{highlights}\end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{January 2022 – July 2023}
+        \textbf{Backend Lead and Full Stack}, AISEC MELLA, Thailand\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}\begin{highlights}
+            \item NodeJS, CSS, HTML
+            \item Spearheaded the development and optimization of server-side applications, enhancing system scalability and performance.
+            \item Led a team in integrating APIs, databases, and storage systems to ensure seamless data flow and reliability
+        \end{highlights}\end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{2020 – 2023}
+        \textbf{Freelance Tutoring}, Thailand\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}\begin{highlights}
+            \item Tutoring STEM classes such as Computer Programming, Physics, Maths (CIE A-Levels)
+        \end{highlights}\end{onecolentry}
+        
+        \section{Publications}
+        
+        \begin{samepage}
+            \begin{twocolentry}{July 2024}
+                \textbf{Oocyte Microscopic Image Fertilization Prediction based on First Polar Body Morphology using YOLOv8}
+            \end{twocolentry}
+            
+            \vspace{0.10 cm}
+            
+            \begin{onecolentry}
+                Sappakit, T., Onthuam, K., \textbf{\textit{Limsila, T.}}, Chaichaowarat, R., \& Suebthawinkul, C. (2024, July). Oocyte Microscopic Image Fertilization Prediction based on First Polar Body Morphology using YOLOv8. In \textit{2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)} (pp. 1-4). IEEE. \href{https://ieeexplore.ieee.org/abstract/document/10782265}{\underline{10.1109/EMBC.2024.1234567}}
+            \end{onecolentry}
+        \end{samepage}
+        
+
+        \vspace{0.30 cm}
+        
+        \begin{samepage}
+            \begin{twocolentry}{May 2024}
+                \textbf{Automated Object Keypoints Dataset Generation Using Blender}
+            \end{twocolentry}
+            \vspace{0.10 cm}
+            \begin{onecolentry}
+                Sappakit, T., \textbf{\textit{Limsila, T.}}, Chammanard, K., Jobsri, N., Laomahamek, S., Worakulpisut, T. C., \& Chaichaowarat, R. (2024, May). Automated Object Keypoints Dataset Generation Using Blender. In \textit{2024 21st International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI-CON)} (pp. 1-5). IEEE. \href{https://ieeexplore.ieee.org/abstract/document/10594926}{\underline{10.1109/ECTI-CON.2024.2345678}}
+            \end{onecolentry}
+        \end{samepage}
+        
+        \vspace{0.30 cm}
+        
+        \begin{samepage}
+            \begin{twocolentry}{August 2023}
+                \textbf{Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management}
+            \end{twocolentry}
+            \begin{onecolentry}\begin{highlights}
+                \item \href{https://drive.google.com/file/d/1MpDbpqGGHY5RtM_ITuSXXfoJGlBZs_xu/view?usp=drive_link}{\underline{Awarded Best Presenter}}
+            \end{highlights}\end{onecolentry}
+        \vspace{0.10 cm}
+    
+        \begin{onecolentry}
+            \textbf{\textit{Limsila, T.}}, Sirimangkalalo, A., Chuengwutigool, W., \& Feng, W. (2023, August). Computer-vision-powered Automatic Waste Sorting Bin: a Machine Learning-based Solution on Waste Management. In \textit{Journal of Physics: Conference Series} (Vol. 2550, No. 1, p. 012030). IOP Publishing. \href{https://iopscience.iop.org/article/10.1088/1742-6596/2550/1/012030/meta}{\underline{10.1088/1742-6596/2550/1/012030}}
+        \end{onecolentry}
+    \end{samepage}
+
+
+        
+        % \begin{samepage}
+        %     \begin{twocolentry}{
+        %         Jan 2004
+        %     }
+        %         \textbf{3D Finite Element Analysis of No-Insulation Coils}
+        %     \end{twocolentry}
+
+        %     \vspace{0.10 cm}
+            
+        %     \begin{onecolentry}
+        %         \mbox{Frodo Baggins}, \mbox{\textbf{\textit{Tinapat Limsila}}}, \mbox{Samwise Gamgee}
+
+        %         \vspace{0.10 cm}
+                
+        % \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
+        % \end{onecolentry}
+        % \end{samepage}
+
+
+    
+    \section{Projects}
+        \begin{twocolentrylinkheavy}{
+            \href{https://github.com/GameTL/Traveling-Salesman-SCB-10X-Hack}{Traveling-Salesman-SCB-10X-Hack}
+        }
+            \textbf{2nd place, SCB 10X Hackathon} 2023\end{twocolentrylinkheavy}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Member of Bangkok AI HACK 2023 project focused on automating the dataset expansion process for low-resources
+                \item Implemented Diversity-Promoting GANs and Linguistic Diverse Prompting (LDP) to generate novel low-resource language text while enhancing linguistic relativity a cultural relevance within the Large Language Models (LLMs)
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.30 cm}
+        \begin{twocolentrylinkheavy}{
+            \href{https://github.com/GameTL/IMDb-Curator?tab=readme-ov-file}{IMDb-Curator}
+        }
+            \textbf{Project Lead, IMDb-Based Movie Curator} 2023\end{twocolentrylinkheavy}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item As the leader of a three-member team, developed an IMDB curator recommendation system, utilizing k-means clustering on the IMDB dataset complemented by Selenium for web scraping.
+                \item Collaboratively trained the model and launched it on Streamlit with a user-friendly interface, showcasing the collective machine learning and data science expertise acquired by the team.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.30 cm}
+        \begin{twocolentry}{
+        }
+            \textbf{Project Lead, Interactive Trivia Game Robot with Water-Squirting Feature} 2023\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Lead the development of a 3D-printed, app-controlled toy robot that engages users in trivia games, dispensing water squirts to incorrect answers.
+                \item Crafted a web application interface for robot interaction, streamlined the 3D model for efficient fabrication, and integrated computer vision with NLP-driven text-to-speech capabilities.
+                \item Collaborated with the Industrial Design team to ensure ergonomic and aesthetic appeal, while maintaining functionality.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.30 cm}
+        \begin{twocolentry}{
+        }
+            \textbf{Design and Developed a 3D Printed Speaker} 2023\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Designed a 3D printed speaker using Fusion 360, focusing on structural integrity and acoustic properties; conducted simulations using WinISD to assess the resonance of the chamber for optimal bass reproduction.
+                \item Engineered a custom crossover circuit for the 2-way speaker driver
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.30 cm}
+        \begin{twocolentry}{
+        }
+            \textbf{Project Lead, Human Tracking Self-Driving Robot} 2023\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Engineered a self-driving robot car with human tracking capabilities, utilizing an optimized YOLOv5 computer vision model for real-time identification and following on the Jetson Nano with TensorRT optimization.
+                \item Implemented an ultrasonic sensor array for anti-collision, enabling the robot car to navigate safely in dynamic environments.
+                \item Integrated mecanum wheels to provide omnidirectional movement, enhancing maneuverability and positional accuracy.
+            \end{highlights}
+        \end{onecolentry}
+
+            
+    \section{References}
+        \begin{twocolentry}{
+            \href{paulo.g@chula.ac.th}{paulo.g@chula.ac.th}
+        }
+            \textbf{Asst.Prof.Paulo Garcia, Ph.D.}(Senior Project Advisor) - Chulalongkorn University\end{twocolentry}
+
+        \vspace{0.30 cm}
+
+        \begin{twocolentry}{
+            \href{ronnapee.c@chula.ac.th}{ronnapee.c@chula.ac.th}
+        }
+            \textbf{Assoc.Prof.Ronnapee Chaichaowarat, Ph.D.} - Chulalongkorn University\end{twocolentry}
+\end{document}
