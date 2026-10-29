@@ -1,6 +1,6 @@
 ### Hi there, my name is Game! 👋
 
-**Tinapat Game Limsila** · PhD Student in Robotics, Nanyang Technological University, Singapore
+**Tinapat Game Limsila** · PhD Student in Robotics · Ex-ROS-I, ARTC · Nanyang Technological University, Singapore
 
 🌐 [Homepage](https://gametl.github.io/GameTL/) · 🎓 [Google Scholar](https://scholar.google.com/citations?user=Z4n4YowAAAAJ&hl=en) · 📄 [alphaXiv](https://www.alphaxiv.org/@tinapat-game-limsila) · 💼 [LinkedIn](https://th.linkedin.com/in/gametl)
 
@@ -25,6 +25,7 @@
 # Experience
 - (2026-Present)   🚀 Co-Founder, [COREAXIS Technology Co., Ltd. (3DFabTH)](https://3dfabth.com/en), Bangkok, Thailand (remote)
 - (2026)   🤖 Robotics Software Engineer (ROS-Industrial), A\*STAR ARTC, Singapore (May - Jul 2026)
+  - Open-source contributions: [rmf2-ui](https://github.com/ros-industrial/rmf2-ui), [vda5050_core](https://github.com/ros-industrial/vda5050_core), [RMF Industrial](https://www.rmf-industrial.org/)
 - (2024-2026)   🎉 PCS Thailand - IoT Lead Engineer (PCS Athena IoT Platform), Aug 2024 - Feb 2026
 - (2024)   🎉 PCS Thailand - IoT Engineering Intern, May - Aug 2024
 - (2023-2024)   🤖 EIC Chula (Engineering Innovator Club), Chulalongkorn University: Vice-President (Jan 2023 - May 2024); Lead NLP Software Engineer (Aug 2022 - May 2024)
